@@ -1,0 +1,36 @@
+.containerProducts {
+    position: absolute;
+    top: 220px; /* Alinhar ao topo do menu */
+    left: 380px; /* Espaço suficiente para ficar ao lado do menu */
+    width: calc(100% - 380px); /* Ajuste a largura conforme necessário */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaçamento entre os produtos */
+    box-sizing: border-box;
+}
+
+.containerProducts span {
+    background-color: rgba(246, 235, 235, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid silver;
+    width: 200px; /* Ajuste conforme necessário */
+    height: 350px; /* Ajuste conforme necessário */
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.containerProducts img {
+    width: 100%; /* Ajuste a largura da imagem para caber dentro do span */
+    height: auto;
+    margin-bottom: 10px;
+}
+.containerProducts span:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}

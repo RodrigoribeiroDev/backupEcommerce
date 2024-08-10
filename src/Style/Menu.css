@@ -1,0 +1,45 @@
+.containerMenu {
+    position: relative;
+    width: 280px;
+    height: 250px;
+    padding: 2%;
+    top: 220px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os spans à esquerda */
+}
+
+.MenuList {
+    padding: 5px;
+    margin: 5px;
+    width: 100%; /* Garante que o menu ocupe toda a largura do container */
+}
+
+.MenuSpan {
+    background: linear-gradient(145deg, rgb(240, 103, 29), rgb(206, 94, 34));
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.MenuSpan:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-color: rgb(240, 103, 29);
+}
+

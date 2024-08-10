@@ -1,0 +1,15 @@
+.navbar {
+    background: linear-gradient(135deg, #4a90e2, #003a70); /* Gradiente azul claro para azul escuro */
+    color: white;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    top: 0; /* Alinha ao topo da tela */
+    left: 0; /* Alinha ao lado esquerdo da tela */
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 150px;
+    position: absolute;
+    border-bottom: 2px solid rgb(240, 103, 29);
+}
+

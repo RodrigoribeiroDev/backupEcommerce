@@ -1,0 +1,19 @@
+button {
+    background-color: transparent; /* Torna o fundo do botão transparente */
+    border: none; /* Remove a borda do botão */
+    cursor: pointer; /* Adiciona um cursor de ponteiro para indicar que é clicável */
+    padding: 0; /* Remove o padding do botão */
+}
+
+button > svg {
+    font-size: 24px; /* Ajuste o tamanho do ícone */
+    color: #000; /* Altere a cor do ícone conforme desejado */
+}
+
+button:hover > svg {
+    color: #007bff; /* Altere a cor do ícone ao passar o mouse, se desejar */
+}
+
+button:focus {
+    outline: none; /* Remove o contorno ao focar no botão */
+}

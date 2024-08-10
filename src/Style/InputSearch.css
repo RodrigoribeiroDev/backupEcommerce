@@ -1,0 +1,30 @@
+.containerInput {
+    position: relative;
+}
+
+.IptSearch {
+    position: absolute;
+    top: 180px;
+    left: 88px;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.IptSearch:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+    outline: none;
+}
+
+.IptSearch::placeholder {
+    color: #999;
+}
+.iconSpan{
+    position: absolute;
+    right: 1000px;
+    top: 200px;
+}

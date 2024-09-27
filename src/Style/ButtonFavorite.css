@@ -1,0 +1,41 @@
+.buttonFavorite {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  color: red;
+  font-size: 22px; /* Tamanho inicial do ícone */
+  transition: transform 0.3s, color 0.3s; /* Transição suave para a transformação e a cor */
+}
+
+
+
+.buttonFavorite .tooltip {
+  visibility: hidden;
+  width: auto; /* Ajusta a largura automaticamente ao conteúdo */
+  max-width: 115px; /* Define um limite máximo de largura */
+  height: 20px;
+  padding: 3px 6px; /* Adiciona padding para tornar a tooltip mais legível */
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-align: center; /* Centraliza o texto */
+  border-radius: 4px; /* Arredonda as bordas para um visual mais suave */
+  position: absolute;
+  transform: translateX(-50%);
+  opacity: 0;
+  font-size: 11px; /* Ajuste o tamanho da fonte */
+  transition: opacity 0.3s;
+  z-index: 1; /* Garante que a tooltip fique acima de outros elementos */
+  white-space: nowrap; /* Evita quebra de linha */
+}
+
+
+/* Exibir Tooltip ao passar o mouse */
+.buttonFavorite:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,19 +1,43 @@
-button {
+.buttonCart {
     background-color: transparent; /* Torna o fundo do botão transparente */
     border: none; /* Remove a borda do botão */
     cursor: pointer; /* Adiciona um cursor de ponteiro para indicar que é clicável */
     padding: 0; /* Remove o padding do botão */
 }
 
-button > svg {
+.buttonCart > svg {
     font-size: 24px; /* Ajuste o tamanho do ícone */
     color: #000; /* Altere a cor do ícone conforme desejado */
 }
 
-button:hover > svg {
+.buttonCart:hover > svg {
     color: #007bff; /* Altere a cor do ícone ao passar o mouse, se desejar */
 }
 
-button:focus {
+.buttonCart:focus {
     outline: none; /* Remove o contorno ao focar no botão */
 }
+
+.buttonCart .tooltip {
+    visibility: hidden;
+    width: auto; /* Ajusta a largura automaticamente ao conteúdo */
+    max-width: 115px; /* Define um limite máximo de largura */
+    height: 20px;
+    padding: 3px 6px; /* Adiciona padding para tornar a tooltip mais legível */
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center; /* Centraliza o texto */
+    border-radius: 4px; /* Arredonda as bordas para um visual mais suave */
+    position: absolute;
+    transform: translateX(-50%);
+    opacity: 0;
+    font-size: 11px; /* Ajuste o tamanho da fonte */
+    transition: opacity 0.3s;
+    z-index: 1; /* Garante que a tooltip fique acima de outros elementos */
+    white-space: nowrap; /* Evita quebra de linha */
+  }
+  .buttonCart:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  

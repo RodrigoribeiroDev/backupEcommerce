@@ -1,0 +1,22 @@
+.iconDelete {
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto e do ícone */
+    border: none; /* Remove a borda padrão */
+    width: 25px; /* Largura do botão */
+    height: 25px; /* Altura do botão */
+    border-radius: 50%; /* Arredonda os cantos */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar o mouse */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .iconDelete:hover {
+    background-color: darkred; /* Cor mais escura ao passar o mouse */
+  }
+  
+  .iconDelete svg {
+    width: 20px; /* Tamanho do ícone */
+    height: 20px; /* Tamanho do ícone */
+  }
+  

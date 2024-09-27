@@ -26,14 +26,38 @@
 }
 
 .containerProducts img {
-    width: 70%; /* Ocupa toda a largura disponível no span */
-    max-height: 200px; /* Limita a altura máxima da imagem */
-    object-fit: contain; /* Garante que a imagem seja redimensionada proporcionalmente */
+    width: 100%; /* Ajuste a largura da imagem para caber dentro do span */
+    height: auto;
     margin-bottom: 10px;
 }
-
 .containerProducts span:hover {
     transform: scale(1.1); /* Aumenta o tamanho em 10% */
     transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
 
+.containerProducts section{
+    position: relative;
+    right: 200px;
+    top: 100px;
+}
+.btnFromCart {
+    width: 200px;
+    height: 50px;
+    background-color: #ffd700; /* Amarelo */
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btnPay:hover {
+    background-color: #e6b800; /* Amarelo escuro */
+  }
+
+  .total{
+    position: relative;
+    margin-bottom: 15px;
+  }

@@ -8,13 +8,14 @@ const ButtonCart = ({product}) => {
 
   const addToItems = () => {
     addToCart(product);
-    console.log('Tentando adicionar item:', product); 
+    console.log('Adicionando item:', product); 
   };
 
   return (
     <div>
-      <button onClick={addToItems}>
+      <button className='buttonCart' onClick={addToItems}>
         <IoAddCircleOutline />
+        <span className="tooltip">Adicionar ao carrinho</span>
         </button>
     </div>
   );

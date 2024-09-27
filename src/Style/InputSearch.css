@@ -1,11 +1,12 @@
 .containerInput {
     position: relative;
+    padding: 0;
 }
 
 .IptSearch {
     position: absolute;
-    top: 180px;
-    left: 88px;
+    top: -50px;
+    left: -270px;
     border-radius: 5px;
     width: 200px;
     padding: 10px;
@@ -22,9 +23,4 @@
 
 .IptSearch::placeholder {
     color: #999;
-}
-.iconSpan{
-    position: absolute;
-    right: 1000px;
-    top: 200px;
 }

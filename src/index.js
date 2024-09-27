@@ -9,7 +9,9 @@ import Cart from './Components/Cart';
 import Menu from './Components/Menu';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ProductsCard from './Components/ProductsCard';
-
+import Favorite from './Components/Favorite';
+import PayamentForm from './Components/PaymentForm'
+import ButtonCode from './Components/ButtonCode';
 
 const router = createBrowserRouter([
   {
@@ -17,9 +19,12 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
   
-  { index: true, element: <ProductsCard /> }, //Remove o elemento do cart
+  { index: true, element: <ProductsCard /> }, //Esconde o elemento quando clickado em outro
   { path: "cart", element: <Cart /> },
   { path: "menu", element: <Menu /> },
+  { path: "favorite", element: <Favorite />},
+  { path: "payamentForm", element: <PayamentForm />},
+  { path: "buttonCode", element: <ButtonCode /> }
 ],
 },
 ])
@@ -28,7 +33,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-
     <CartProvider>
       
       <RouterProvider router={router} />

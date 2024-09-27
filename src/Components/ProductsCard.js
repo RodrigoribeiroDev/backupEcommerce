@@ -1,5 +1,4 @@
 import Products from "./Products"
-import '../Style/ProductsCard.css'
 
 const ProductsCard = () => {
   return (
